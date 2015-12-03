@@ -7,6 +7,8 @@ void setup(){
 void draw(){
   square();
   randomCircle();
+  randomLine();
+
 }
 
 void square(){
@@ -17,4 +19,9 @@ void square(){
 void randomCircle(){
   fill(mouseX, mouseY, 100);
   ellipse(mouseX, mouseY, 30, 30);
+}
+
+void randomLine(){
+  line(mouseX-25, mouseY-25, mouseX+25, mouseY+25);
+  stroke(mouseX, mouseY, 100);
 }
